@@ -19,7 +19,7 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
       - run: pip install -r requirements.txt
-      - run: sudo apt-get update && sudo apt-get install -y libdbus-glib-1-2
+      - run: sudo apt-get update && sudo apt-get install -y libdbus-glib-1-2 libnss3 libatk-bridge2.0-0 libgtk-3-0 libasound2 fonts-liberation
       - run: playwright install
       - run: python give_kudos.py
         
